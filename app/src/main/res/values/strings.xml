@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Finance App</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_dashboard">Collection</string>
+    <string name="title_notifications">Loan</string>
+    <string name="title_borrowers">Borrowers</string>
+</resources>
