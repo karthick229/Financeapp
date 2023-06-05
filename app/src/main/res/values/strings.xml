@@ -4,4 +4,83 @@
     <string name="title_dashboard">Collection</string>
     <string name="title_notifications">Loan</string>
     <string name="title_borrowers">Borrowers</string>
+    <string name="welcome_taji">Welcome To AFAR CABS!!!</string>
+    <string name="hello">Hello</string>
+    <string name="sign_in_text">Sign in with Admin Credentials</string>
+    <string name="email_placeholder">E-mail</string>
+    <string name="email_hint">E-mail Address</string>
+    <string name="email">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="accountSignUp">Create a New AFAR Admin Account</string>
+    <string name="sign_up_text">Sign up to get your AFAR Admin account</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="fname_placeholder">First Name</string>
+    <string name="lname_placeholder">Last Name</string>
+    <string name="phone_number_placeholder">Phone Number</string>
+    <string name="confirm_password_placeholder">Confirm Password</string>
+    <string name="sign_up">Create</string>
+    <string name="create_account">Create Account</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">GOOGLE_MAPS_API</string>
+    <string name="firebase_functions_base_url" templateMergeStrategy="preserve" translatable="false">https://firebase_functions_base_url/</string>
+    <string name="publishablekey" templateMergeStrategy="preserve" translatable="false">stripe_pk_key</string>
+    <string name="stripe_client_key" templateMergeStrategy="preserve" translatable="false">stripe_sk_key</string>
+    <string name="firebase_hosting_url" templateMergeStrategy="preserve" translatable="false">https://firebase_hosting_url/</string>
+
+
+    <string name="phone_driver">Phone</string>
+    <string name="call_uber">Call Car</string>
+    <string name="type_4">Bike</string>
+    <string name="type_3">SUV</string>
+    <string name="type_2">Van</string>
+    <string name="type_1">Car</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name </string>
+    <string name="confirm">Confirm</string>
+    <string name="working">Working</string>
+    <string name="destination">Destination</string>
+    <string name="picked_customer">Picked customer</string>
+    <string name="car">Car</string>
+    <string name="balance">Balance</string>
+    <string name="payout">Payout</string>
+    <string name="from_to">From - To</string>
+    <string name="distance">Distance</string>
+    <string name="date">Date</string>
+
+
+
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="email_id">Email-ID</string>
+    <string name="address">Address</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="vehicle_registration_number">Vehicle Registration Number</string>
+    <string name="insurance_number">Insurance Number</string>
+    <string name="insurance_expiry_date">Insurance Expiry Date</string>
+    <string name="driver_license_number">Driver License Number</string>
+    <string name="license_expiry_date">License Expiry Date</string>
+    <string name="aadhar_number">Aadhar Number</string>
+    <string name="pan_number">PAN Number</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="driver_id_proof">Driver Id Proof</string>
+    <string name="all">ALL</string>
+    <string name="pending">Pending</string>
+    <string name="approved">Approved</string>
+    <string name="reject">Rejected</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="aadhar_no">Aadhar No</string>
+    <string name="father_name">Father Name</string>
+
 </resources>

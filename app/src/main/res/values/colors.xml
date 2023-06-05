@@ -568,6 +568,7 @@
     <color name="p_header">#F0F0F0</color>
     <color name="unt_back">#BBBBBB</color>
     <color name="market_cell">#FFFCDF</color>
+    <color name="newtheme_2">#0002FC</color>
 
     <color name="govt_farm_Dark">#288BB0</color>
     <color name="govt_farm_light">#1D7291</color>

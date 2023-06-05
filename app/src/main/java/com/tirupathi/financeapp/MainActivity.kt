@@ -1,6 +1,8 @@
 package com.tirupathi.financeapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -31,5 +33,12 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+     public fun callintent() {
+
+        val intent = Intent(this, BorrowerActivity::class.java)
+
+        startActivity(intent)
     }
 }
