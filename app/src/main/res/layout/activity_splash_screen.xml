@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/background_2" />
+            android:src="@drawable/background_1" />
         <ImageView
             android:id="@+id/img"
             android:layout_width="wrap_content"
@@ -35,7 +35,6 @@
             android:text="@string/names"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/font_20sp"
-            android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:visibility="visible"
             app:layout_constraintTop_toBottomOf="@+id/img" />

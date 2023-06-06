@@ -30,7 +30,9 @@ class SplashScreenActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_splash_screen)
-
+        if (supportActionBar != null) {
+            supportActionBar!!.hide();
+        }
         val display = windowManager.defaultDisplay
         val size = Point()
         display.  getSize(size)
