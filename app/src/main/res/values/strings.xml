@@ -49,7 +49,11 @@
     <string name="distance">Distance</string>
     <string name="date">Date</string>
 
-
+    <string-array name="Married">
+        <item>None</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
 
 
     <string-array name="Gender">
@@ -83,5 +87,10 @@
     <string name="nav_close">Close</string>
     <string name="aadhar_no">Aadhar No</string>
     <string name="father_name">Father Name</string>
+    <string name="create">Create New Borrower</string>
+    <string name="reference_name">Reference Name</string>
+    <string name="reference_mobile">Reference Mobile</string>
+    <string name="occupation">Occupation</string>
+    <string name="taluk">Taluk</string>
 
 </resources>

@@ -19,7 +19,8 @@ class BorrowerActivity : AppCompatActivity() {
 
         binding = ActivityMainsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        val actionBar = supportActionBar
+        actionBar!!.title = getString(R.string.create)
 
 
     }
