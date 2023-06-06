@@ -43,8 +43,8 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
             finish()
         }, 1500)
-        //val myanim: Animation = AnimationUtils.loadAnimation(this, R.anim.transition)
-        //dataBinding.img.startAnimation(myanim)
+//        val myanim: Animation = AnimationUtils.loadAnimation(this, R.anim.transition)
+//        dataBinding.img.startAnimation(myanim)
 
     }
 
