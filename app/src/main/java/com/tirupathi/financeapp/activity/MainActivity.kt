@@ -8,7 +8,6 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.tirupathi.financeapp.LoanActivity
 import com.tirupathi.financeapp.R
 import com.tirupathi.financeapp.databinding.ActivityMainBinding
 
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun callintent1() {
-        val intent1 = Intent(this, LoanActivity::class.java)
+        val intent1 = Intent(this,LoanActivity::class.java)
         startActivity(intent1)
     }
 }

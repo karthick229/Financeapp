@@ -6,48 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".ui.collections.CollectionFragment">
 
-    <RadioGroup
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/radio">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/daily"
+                android:text="Daily Collections"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weekly"
+                android:text="Weekly Collections"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthly"
+                android:text="Monthly Collections"/>
+
+        </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/text_notifications"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/radio"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp"
-        android:weightSum="3">
-
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/daily"
-            android:text="Daily Collection"
-            android:textSize="15sp"
-            android:textColor="@color/colorPrimary"
-            android:layout_weight="1"/>
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/weekly"
-            android:text="Weekly Collection"
-            android:textSize="15sp"
-            android:textColor="@color/colorPrimary"
-            android:layout_weight="1"/>
-        <RadioButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/monthly"
-            android:text="Monthly Collection"
-            android:textSize="15sp"
-            android:textColor="@color/colorPrimary"
-            android:layout_weight="1"/>
-
-    </RadioGroup>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/recyclerview"
-        app:layout_constraintTop_toBottomOf="@+id/radio"/>
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

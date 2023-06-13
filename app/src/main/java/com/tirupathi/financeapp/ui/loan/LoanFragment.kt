@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.tirupathi.financeapp.activity.MainActivity
+import com.tirupathi.financeapp.MainActivity
 import com.tirupathi.financeapp.databinding.FragmentNotificationsBinding
 
 class LoanFragment : Fragment() {
@@ -30,7 +30,7 @@ class LoanFragment : Fragment() {
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
-        val fab1: TextView = binding.fab
+        val fab1: TextView = binding.fab1
 
         val textView: TextView = binding.textNotifications
         fab1.setOnClickListener {
