@@ -2,10 +2,10 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:background="@color/white">
 
         <ScrollView
@@ -43,8 +43,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="90dp"
                     android:gravity="center"
                     android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -53,6 +51,7 @@
                     app:layout_constraintRight_toRightOf="@id/guideline_rights"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="1.0">
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -83,6 +82,7 @@
 
                     </com.google.android.material.textfield.TextInputLayout>
 
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="350dp"
@@ -111,6 +111,7 @@
                             app:fontFamily="@font/dmsans_regular" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -168,6 +169,7 @@
                             app:fontFamily="@font/dmsans_regular" />
                     </com.google.android.material.textfield.TextInputLayout>
 
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="350dp"
@@ -193,6 +195,7 @@
                             app:fontFamily="@font/dmsans_regular" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="350dp"
@@ -244,6 +247,7 @@
                             android:textColor="@color/labelrecyclerview" />
 
                     </com.google.android.material.textfield.TextInputLayout>
+
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                         android:layout_width="350dp"
@@ -327,7 +331,6 @@
                             android:textColor="@color/labelrecyclerview" />
 
                     </com.google.android.material.textfield.TextInputLayout>
-
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
@@ -569,24 +572,25 @@
                             android:textColor="@color/labelrecyclerview" />
 
                     </com.google.android.material.textfield.TextInputLayout>
-                    <TextView
+
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/submit_cropc"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/green_round_button"
                         android:enabled="false"
-                        android:fontFamily="@font/roboto_medium"
                         android:gravity="center"
                         android:text="Add Borrower"
                         android:textColor="@color/white"
                         android:textSize="16dp"
-                        android:layout_margin="@dimen/margin_50dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginRight="@dimen/margin_50dp"
+                        android:layout_marginLeft="@dimen/margin_50dp"
                         app:layout_constraintBottom_toBottomOf="parent"
 
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintVertical_bias="1" />
-
+                        app:layout_constraintVertical_bias="1"/>
 
                 </LinearLayout>
 
@@ -595,5 +599,6 @@
         </ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </layout>

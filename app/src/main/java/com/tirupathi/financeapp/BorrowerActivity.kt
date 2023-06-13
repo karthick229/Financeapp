@@ -1,6 +1,7 @@
 package com.tirupathi.financeapp
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -22,6 +23,6 @@ class BorrowerActivity : AppCompatActivity() {
         val actionBar = supportActionBar
         actionBar!!.title = getString(R.string.create)
 
-
+Log.e("Sujata","testing")
     }
 }
