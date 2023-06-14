@@ -29,9 +29,10 @@ class CollectionFragment : Fragment() {
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+      //  dashboardViewModel.text.observe(viewLifecycleOwner) {
+       //     textView.text = it
+      //  }
+        textView.text="Sujata"
         return root
     }
 

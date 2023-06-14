@@ -26,5 +26,5 @@
         android:id="@+id/navigation_borrowers"
         android:name="com.tirupathi.financeapp.ui.borrowers.BorrowersFragment"
         android:label="@string/title_borrowers"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_borrowers" />
 </navigation>
