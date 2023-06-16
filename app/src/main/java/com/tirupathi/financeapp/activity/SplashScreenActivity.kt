@@ -1,4 +1,4 @@
-package com.tirupathi.financeapp
+package com.tirupathi.financeapp.activity
 
 
 import android.annotation.SuppressLint
@@ -6,13 +6,11 @@ import android.content.Intent
 import android.graphics.Point
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.view.WindowManager
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.tirupathi.financeapp.R
 import com.tirupathi.financeapp.databinding.ActivitySplashScreenBinding
 
 

@@ -1,14 +1,10 @@
-package com.tirupathi.financeapp
+package com.tirupathi.financeapp.activity
 
 import android.os.Bundle
 import android.util.Log
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.tirupathi.financeapp.databinding.ActivityMainBinding
+import com.tirupathi.financeapp.R
 import com.tirupathi.financeapp.databinding.ActivityMainsBinding
 
 class BorrowerActivity : AppCompatActivity() {
