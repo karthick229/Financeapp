@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+       <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:id="@+id/constraint">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name"
+                            android:text="Name"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/amount"
+                            android:text="Amount"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/name"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dl"
+                            android:text="DL"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/amount"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/due"
+                            android:text="Due"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toBottomOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/date"
+                            android:text="Date"
+                            android:textSize="20sp"
+                            app:layout_constraintTop_toBottomOf="@+id/amount"
+                            app:layout_constraintStart_toEndOf="@+id/due"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/pay"
+                            android:hint="Pay"
+                            android:textColorHint="@color/white"
+                            android:textSize="15sp"
+                            app:layout_constraintTop_toBottomOf="@+id/dl"
+                            app:layout_constraintStart_toEndOf="@+id/date"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
