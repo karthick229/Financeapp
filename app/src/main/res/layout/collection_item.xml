@@ -32,7 +32,7 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/name"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="50dp"/>
+                            android:layout_marginLeft="10dp"/>
 
                         <TextView
                             android:layout_width="0dp"
@@ -43,7 +43,7 @@
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintStart_toEndOf="@+id/amount"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="50dp"/>
+                            android:layout_marginLeft="10dp"/>
 
                         <TextView
                             android:layout_width="0dp"
@@ -64,7 +64,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/amount"
                             app:layout_constraintStart_toEndOf="@+id/due"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="50dp"/>
+                            android:layout_marginLeft="10dp"/>
                         <Button
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                             app:layout_constraintTop_toBottomOf="@+id/dl"
                             app:layout_constraintStart_toEndOf="@+id/date"
                             android:layout_marginTop="10dp"
-                            android:layout_marginLeft="50dp"/>
+                            android:layout_marginLeft="10dp"/>
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
