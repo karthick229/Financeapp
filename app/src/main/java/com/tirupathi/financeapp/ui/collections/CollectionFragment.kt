@@ -38,16 +38,17 @@ class CollectionFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
            // textView.text = it
         }
-         fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
-            super.onViewCreated(itemView, savedInstanceState)
-           binding.recyclerview.apply {
-                // set a LinearLayoutManager to handle Android
-                // RecyclerView behavior
-                layoutManager = LinearLayoutManager(activity)
-                // set the custom adapter to the RecyclerView
-                adapter = CollectionAdapter()
-            }
+        binding.recyclerview.apply {
+            // set a LinearLayoutManager to handle Android
+            // RecyclerView behavior
+            layoutManager = LinearLayoutManager(activity)
+            // set the custom adapter to the RecyclerView
+            adapter = CollectionAdapter()
         }
+//         fun onViewCreated(itemView: View, savedInstanceState: Bundle?) {
+//            super.onViewCreated(itemView, savedInstanceState)
+//
+//        }
 
         return root
     }

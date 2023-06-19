@@ -92,5 +92,8 @@
     <string name="reference_mobile">Reference Mobile</string>
     <string name="occupation">Occupation</string>
     <string name="taluk">Taluk</string>
+    <string name="daily_collection">Daily \nCollection</string>
+    <string name="weekly_collection">Weekly Collection</string>
+    <string name="monthly_collection">Monthly Collection</string>
 
 </resources>
