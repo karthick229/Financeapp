@@ -50,11 +50,11 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         var pay: Button
 
         init {
-            name = itemView.findViewById(R.id.name)
-            amount = itemView.findViewById(R.id.amount)
-            dl = itemView.findViewById(R.id.dl)
-            due = itemView.findViewById(R.id.due)
-            date = itemView.findViewById(R.id.date)
+            name = itemView.findViewById(R.id.text_view_loan_name)
+            amount = itemView.findViewById(R.id.text_loan_amount)
+            dl = itemView.findViewById(R.id.text_view_collection)
+            due = itemView.findViewById(R.id.text_view_loan_due)
+            date = itemView.findViewById(R.id.text_view_loan_date)
             pay = itemView.findViewById(R.id.pay)
 
            /* itemView.setOnClickListener {

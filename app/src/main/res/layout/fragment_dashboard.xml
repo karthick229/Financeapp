@@ -21,15 +21,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/daily"
-            android:text="Daily Collection"
+            android:text="@string/daily_collection"
             android:textSize="15sp"
+            android:checked="true"
             android:textColor="@color/colorPrimary"
             android:layout_weight="1"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/weekly"
-            android:text="Weekly Collection"
+            android:text="@string/weekly_collection"
             android:textSize="15sp"
             android:textColor="@color/colorPrimary"
             android:layout_weight="1"/>
@@ -37,7 +38,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/monthly"
-            android:text="Monthly Collection"
+            android:text="@string/monthly_collection"
             android:textSize="15sp"
             android:textColor="@color/colorPrimary"
             android:layout_weight="1"/>
@@ -48,6 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerview"
+        tools:listitem="@layout/collection_item"
         app:layout_constraintTop_toBottomOf="@+id/radio"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
