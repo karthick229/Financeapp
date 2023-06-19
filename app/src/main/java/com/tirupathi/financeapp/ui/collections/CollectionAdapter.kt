@@ -35,10 +35,6 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         "5000", "5000",
         "5000", "5000")
 
-    private val pay = arrayOf("DL-1",
-        "DL-1", "DL-1", "DL-1",
-        "DL-1", "DL-1", "DL-1",
-        "DL-1")
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
