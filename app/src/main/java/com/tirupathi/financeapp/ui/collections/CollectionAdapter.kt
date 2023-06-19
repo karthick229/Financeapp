@@ -21,19 +21,20 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         "5000", "5000",
         "5000", "5000")
 
-    private val del = arrayOf("DL-1",
+    private val dl = arrayOf("DL-1",
         "DL-1", "DL-1", "DL-1",
         "DL-1", "DL-1", "DL-1",
         "DL-1")
-    private val due = arrayOf("sujata",
-        "sujata", "sujata", "sujata",
-        "sujata", "sujata", "sujata",
-        "sujata")
+    private val due = arrayOf("due",
+        "due", "due", "due",
+        "due", "due", "due",
+        "due")
 
-    private val date = arrayOf("5000", "5000",
-        "5000", "5000",
-        "5000", "5000",
-        "5000", "5000")
+    private val date = arrayOf("20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023")
+    private val pay = arrayOf("pay","pay","pay","pay","pay","pay","pay","pay")
 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -43,7 +44,7 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         var dl: TextView
         var due: TextView
         var date: TextView
-        var pay: Button
+        var pay: TextView
 
         init {
             name = itemView.findViewById(R.id.name)
@@ -75,10 +76,10 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
         viewHolder.name.text = name[i]
         viewHolder.amount.text = amount[i]
-        viewHolder.dl.text = del[i]
-        viewHolder.due.text = del[i]
-        viewHolder.date.text = del[i]
-        viewHolder.pay.text = del[i]
+        viewHolder.dl.text = dl[i]
+        viewHolder.due.text = due[i]
+        viewHolder.date.text = date[i]
+        viewHolder.pay.text = pay[i]
 
     }
 
