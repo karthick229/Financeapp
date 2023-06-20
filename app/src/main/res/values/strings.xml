@@ -95,5 +95,6 @@
     <string name="daily_collection">Daily \nCollection</string>
     <string name="weekly_collection">Weekly Collection</string>
     <string name="monthly_collection">Monthly Collection</string>
+    <string name="transactions">DL-1 Transactions</string>
 
 </resources>
