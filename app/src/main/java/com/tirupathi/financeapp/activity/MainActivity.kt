@@ -44,4 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         startActivity(intent)
     }
+    /*fun callintent1() {
+        val intent1 = Intent(this,LoanActivity::class.java)
+        startActivity(intent1)
+    }*/
 }

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_lefts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/margin_140dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelinee"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.7" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_rightt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/margin_16dp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_loan_name"
+                style="@style/blockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/robotomono_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="Sujatha"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_lefts"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/text_loan_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/robotomono_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="5000"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guidelinee"
+                app:layout_constraintStart_toEndOf="@id/guideline_lefts"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_collection"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/robotomono_regular"
+                android:gravity="center"
+                android:lines="1"
+                android:padding="8dp"
+                android:text="5000"
+                android:textColor="@color/colorPrimary"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                app:layout_constraintStart_toEndOf="@id/guidelinee"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_loan_due"
+                style="@style/blockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="150dp"
+                android:maxLines="2"
+                android:text="Due 2"
+                android:textColor="@color/panchayathnamecolor"
+                android:textSize="@dimen/font_16sp"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_lefts"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_loan_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_view_loan_date"
+                style="@style/blockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxWidth="150dp"
+                android:maxLines="2"
+                android:text="Due 2"
+                android:textColor="@color/panchayathnamecolor"
+                android:textSize="@dimen/font_16sp"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@+id/guidelinee"
+                app:layout_constraintStart_toEndOf="@id/guideline_lefts"
+                app:layout_constraintTop_toBottomOf="@id/text_loan_amount" />
+
+            <Button
+                android:id="@+id/pay"
+                style="@style/blockName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Pay"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                app:layout_constraintStart_toEndOf="@id/guidelinee"
+                app:layout_constraintTop_toBottomOf="@id/text_view_collection" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <!--                <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="100dp"-->
+    <!--                    android:id="@+id/constraint">-->
+    <!--                        <TextView-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/name"-->
+    <!--                            android:text="Name"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            app:layout_constraintHorizontal_bias="1.5"-->
+    <!--                            android:layout_marginLeft="10dp"/>-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/amount"-->
+    <!--                            android:text="Amount"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent"-->
+    <!--                            app:layout_constraintStart_toEndOf="@+id/name"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            android:layout_marginLeft="50dp"/>-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/dl"-->
+    <!--                            android:text="DL"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            app:layout_constraintTop_toTopOf="parent"-->
+    <!--                            app:layout_constraintStart_toEndOf="@+id/amount"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            android:layout_marginLeft="50dp"/>-->
+
+    <!--                        <TextView-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/due"-->
+    <!--                            android:text="Due"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            app:layout_constraintTop_toBottomOf="@+id/name"-->
+    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            android:layout_marginLeft="10dp"/>-->
+    <!--                        <TextView-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/date"-->
+    <!--                            android:text="Date"-->
+    <!--                            android:textSize="20sp"-->
+    <!--                            app:layout_constraintTop_toBottomOf="@+id/amount"-->
+    <!--                            app:layout_constraintStart_toEndOf="@+id/due"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            android:layout_marginLeft="50dp"/>-->
+    <!--                        <Button-->
+    <!--                            android:layout_width="0dp"-->
+    <!--                            android:layout_height="wrap_content"-->
+    <!--                            android:id="@+id/pay"-->
+    <!--                            android:hint="Pay"-->
+    <!--                            android:textColorHint="@color/white"-->
+    <!--                            android:textSize="15sp"-->
+    <!--                            app:layout_constraintTop_toBottomOf="@+id/dl"-->
+    <!--                            app:layout_constraintStart_toEndOf="@+id/date"-->
+    <!--                            android:layout_marginTop="10dp"-->
+    <!--                            android:layout_marginLeft="50dp"/>-->
+
+
+    <!--                </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.cardview.widget.CardView>
+

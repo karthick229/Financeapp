@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cardview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_lefts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="100dp"/>
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.6" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.75" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_rightt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_end="5dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/avatar_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_lefts"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_loan_name"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/robotomono_regular"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text="Sujatha"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_lefts"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_first"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/robotomono_regular"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="Bangalore"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_16sp"
+                    android:visibility="visible"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_first"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_lefts"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_loan_name" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_loan_date"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="19/06/23"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_first"
+                    app:layout_constraintStart_toEndOf="@+id/guideline_lefts"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_place" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_total"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="Total[5]"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_first"
+                    app:layout_constraintStart_toEndOf="@id/guideline_lefts"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_loan_date" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_total_amount"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:maxLines="2"
+                    android:text="4000"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_first"
+                    app:layout_constraintStart_toEndOf="@id/guideline_lefts"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_total" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_number"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="5"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_second"
+                    app:layout_constraintStart_toEndOf="@id/guideline_first"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_place"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_paid"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="Paid[0]"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_second"
+                    app:layout_constraintStart_toEndOf="@id/guideline_first"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_number"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_paid_amount"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="0"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_second"
+                    app:layout_constraintStart_toEndOf="@id/guideline_first"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_paid"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_pending"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="Pending[5]"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_third"
+                    app:layout_constraintStart_toEndOf="@id/guideline_second"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_number"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_pending_amount"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="4000"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_third"
+                    app:layout_constraintStart_toEndOf="@id/guideline_second"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_pending"/>
+
+                <TextView
+                    android:id="@+id/text_view_dl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/robotomono_regular"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:padding="5dp"
+                    android:text="DL-1"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                    app:layout_constraintStart_toEndOf="@id/guideline_third"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <Button
+                    android:id="@+id/pay_emi"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="EMI"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                    app:layout_constraintStart_toEndOf="@id/guideline_third"
+                    app:layout_constraintTop_toBottomOf="@id/text_view_place" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_Balance"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="Balance[0]"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                    app:layout_constraintStart_toEndOf="@id/guideline_third"
+                    app:layout_constraintTop_toBottomOf="@+id/pay_emi"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text_view_Balance_amount"
+                    style="@style/blockName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxWidth="150dp"
+                    android:Lines="1"
+                    android:text="0"
+                    android:textColor="@color/panchayathnamecolor"
+                    android:textSize="@dimen/font_16sp"
+                    android:textStyle="bold"
+                    app:layout_constrainedWidth="true"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline_rightt"
+                    app:layout_constraintStart_toEndOf="@id/guideline_third"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_Balance"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                android:id="@+id/invoices_layout">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <TableLayout
+                        android:id="@+id/table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="0dp"
+                        android:layout_marginTop="10dp"
+                        android:stretchColumns="0,1">
+                    </TableLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
