@@ -1,13 +1,13 @@
 package com.tirupathi.financeapp.ui.collections
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.tirupathi.financeapp.R
+import com.tirupathi.financeapp.activity.DLTransactionsActivity
 
 class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
 
@@ -21,24 +21,21 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         "5000", "5000",
         "5000", "5000")
 
-    private val del = arrayOf("DL-1",
+    private val dl = arrayOf("DL-1",
         "DL-1", "DL-1", "DL-1",
         "DL-1", "DL-1", "DL-1",
         "DL-1")
-    private val due = arrayOf("sujata",
-        "sujata", "sujata", "sujata",
-        "sujata", "sujata", "sujata",
-        "sujata")
+    private val due = arrayOf("due",
+        "due", "due", "due",
+        "due", "due", "due",
+        "due")
 
-    private val date = arrayOf("5000", "5000",
-        "5000", "5000",
-        "5000", "5000",
-        "5000", "5000")
+    private val date = arrayOf("20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023",
+        "20-06-2023", "20-06-2023")
+    private val pay = arrayOf("pay","pay","pay","pay","pay","pay","pay","pay")
 
-    private val pay = arrayOf("DL-1",
-        "DL-1", "DL-1", "DL-1",
-        "DL-1", "DL-1", "DL-1",
-        "DL-1")
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -47,7 +44,7 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
         var dl: TextView
         var due: TextView
         var date: TextView
-        var pay: Button
+        var pay: TextView
 
         init {
             name = itemView.findViewById(R.id.text_view_loan_name)
@@ -56,6 +53,18 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
             due = itemView.findViewById(R.id.text_view_loan_due)
             date = itemView.findViewById(R.id.text_view_loan_date)
             pay = itemView.findViewById(R.id.pay)
+
+            itemView.setOnClickListener {
+                var position: Int = getAdapterPosition()
+                val context = itemView.context
+                val intent = Intent(context, DLTransactionsActivity::class.java).apply {
+                    /*putExtra("NUMBER", position)
+                    putExtra("CODE", itemKode.text)
+                    putExtra("CATEGORY", itemKategori.text)
+                    putExtra("CONTENT", itemIsi.text)*/
+                }
+                context.startActivity(intent)
+            }
 
            /* itemView.setOnClickListener {
                 var position: Int = getAdapterPosition()
@@ -79,10 +88,10 @@ class CollectionAdapter : RecyclerView.Adapter<CollectionAdapter.ViewHolder>() {
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
         viewHolder.name.text = name[i]
         viewHolder.amount.text = amount[i]
-        viewHolder.dl.text = del[i]
-        viewHolder.due.text = del[i]
-        viewHolder.date.text = del[i]
-        viewHolder.pay.text = del[i]
+        viewHolder.dl.text = dl[i]
+        viewHolder.due.text = due[i]
+        viewHolder.date.text = date[i]
+        viewHolder.pay.text = pay[i]
 
     }
 
