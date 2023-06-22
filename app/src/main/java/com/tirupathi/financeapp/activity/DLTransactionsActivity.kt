@@ -73,19 +73,19 @@ class DLTransactionsActivity : AppCompatActivity(), View.OnClickListener {
         return tv
     }
 
-    private fun getLayoutParams(): ActionBar.LayoutParams {
-        val params = ActionBar.LayoutParams(
-            ActionBar.LayoutParams.MATCH_PARENT,
-            ActionBar.LayoutParams.WRAP_CONTENT
+    private fun getLayoutParams(): TableLayout.LayoutParams {
+        val params = TableLayout.LayoutParams(
+            TableLayout.LayoutParams.WRAP_CONTENT,
+            TableLayout.LayoutParams.WRAP_CONTENT
         )
-        params.setMargins(2, 0, 0, 2)
+        //params.setMargins(2, 0, 0, 2)
         return params
     }
 
     private fun getTblLayoutParams(): TableLayout.LayoutParams {
         return TableLayout.LayoutParams(
-            ActionBar.LayoutParams.MATCH_PARENT,
-            ActionBar.LayoutParams.WRAP_CONTENT
+            TableLayout.LayoutParams.WRAP_CONTENT,
+            TableLayout.LayoutParams.WRAP_CONTENT
         )
     }
 
@@ -94,16 +94,36 @@ class DLTransactionsActivity : AppCompatActivity(), View.OnClickListener {
      */
     fun addHeaders() {
         val tl = findViewById<TableLayout>(R.id.table)
-        val tr = TableRow(this)
-        tr.layoutParams = getLayoutParams()
-        tr.addView(getTextView(0, "Due No", Color.WHITE, Typeface.BOLD, Color.BLUE))
-        tr.addView(getTextView(0, "Due Date", Color.WHITE, Typeface.BOLD, Color.BLUE))
-        tr.addView(getTextView(0, "Amount", Color.WHITE, Typeface.BOLD, Color.BLUE))
-        tr.addView(getTextView(0, "Paid Date", Color.WHITE, Typeface.BOLD, Color.BLUE))
-        tr.addView(getTextView(0, "Collected By", Color.WHITE, Typeface.BOLD, Color.BLUE))
-        tl.addView(tr, getTblLayoutParams())
-    }
+//        val layoutParams = TableLayout.LayoutParams(
+//            TableLayout.LayoutParams.WRAP_CONTENT,
+//            TableLayout.LayoutParams.WRAP_CONTENT
+//        )
+//
+        val row = TableRow(this)
+        row.setBackgroundColor(Color.DKGRAY)
+        tl.addView(row, getLayoutParams())
+//
+        addToTableRow("Name", row, Color.WHITE)
+        addToTableRow("Age", row, Color.WHITE)
+        addToTableRow("Location", row, Color.WHITE)
 
+
+////
+        val tr = TableRow(this)
+//            //tr.layoutParams = getLayoutParams()
+       // tr.addView(getTextView(0, "Due No", Color.WHITE, Typeface.BOLD, Color.BLUE))
+//        tr.addView(getTextView(0, "Due Date", Color.WHITE, Typeface.BOLD, Color.BLUE))
+//        tr.addView(getTextView(0, "Amount", Color.WHITE, Typeface.BOLD, Color.BLUE))
+//        tr.addView(getTextView(0, "Paid Date", Color.WHITE, Typeface.BOLD, Color.BLUE))
+//        tr.addView(getTextView(0, "Collected By", Color.WHITE, Typeface.BOLD, Color.BLUE))
+//        tl.addView(tr, getLayoutParams())
+    }
+    private fun addToTableRow(str: String, row: TableRow, color: Int) {
+        val t = TextView(this)
+        t.setTextColor(color)
+        t.text = str
+        row.addView(t)
+    }
     /**
      * This function add the data to the table
      */
